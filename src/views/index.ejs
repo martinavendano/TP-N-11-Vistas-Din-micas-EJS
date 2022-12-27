@@ -49,12 +49,12 @@
       <div class="ps-row ps-padding-64" id="menu">
         <div class="ps-col l6 ps-padding-large">
           <h1 class="ps-center">Nuestro Menu</h1>
-          <br /> <!--  en este for tomamos el array menu para iterarlo y que nos devuelva cada elemento del mismo,asi vez reemplazamos con una etiqueta ejs para que envie el titulo de cada elemento y asi con la descripcion y el precio menu.titulo,menu.descripcion y menu.precio -->
+          <br /> 
          <% for( let i = 0; i < menu.length; i++ ) { %>
           <a href="/detalle/ <%= menu[i].id  %> ">
             <h4><%= menu[i].titulo %> </h4>
           <p class="ps-text-grey">
-            <%= menu[i].descripcion %> U$S <%= menu[i].precio.toFixed(2) %> <!-- to.fixed(2) sirve para agregar decimales a un numero -->
+            <%= menu[i].descripcion %> U$S <%= menu[i].precio.toFixed(2) %> 
           </p>
           <br />
           </a>
